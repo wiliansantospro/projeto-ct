@@ -2,6 +2,135 @@
 
 
 <body>
-   
+    <div id="container-form">
+        <h1>Cadastro Aluno</h1>
+        <div class="cont-info">
+            <div class="cont-item">
+                <label for="">Nome do Aluno:</label>
+                <input type="text">
+            </div>
+            <div class="cont-item">
+                <label for="">E-mail:</label>
+                <input type="text">
+            </div>
+            <div class="cont-sex">
+                <div class="cont-item-sex">
+                    <label for="">Sexo:</label>
+                    <select name="" id="sexo-select">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cont-item">
+                <label id="lbl-hidden" for="" style="visibility: hidden;">*</label>
+                <input id="orientacao" type="text" placeholder="Digite sua orientação..." disabled>
+            </div>
+            <div class="cont-item">
+                <label for="">Data de Nascimento:</label>
+                <input id="data" type="date">
+            </div>
+        </div>
+
+        <!--CURSO-->
+        <div id="cont-curso">
+            <div class="cont-item">
+                <label for="">Instituição de Ensino:</label>
+                <input type="text">
+            </div>
+            <div class="cont-item">
+                <label for="">Curso:</label>
+                <input type="text">
+            </div>
+            <div class="cont-item">
+                <label for="">Número de Matrícula:</label>
+                <input type="text">
+            </div>
+        </div>
+        <h1>Selecione a Graduação</h1>
+        <div id="container-graduacao">
+            <div class="cont-info-grad">
+                <div class="lbl-check">
+                    <input id="e-técnico" type="checkbox" class="check-graduacao" data-group="graduacao">
+                    <label for="e-técnico">Ensino Técnico:</label>
+                </div>
+                <div class="select-grad">
+                    <select name="" id="select-técnico" disabled>
+                        <option value="">Ensino Médio Integrado</option>
+                        <option value="">Ensino Técnico</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="cont-info-grad">
+                <div class="lbl-check">
+                    <input id="e-graduacao" type="checkbox" class="check-graduacao" data-group="graduacao">
+                    <label for="e-graduacao">Graduação:</label>
+                </div>
+                <div class="select-grad">
+                    <select name="" id="select-graduacao" disabled>
+                        <option value="">Licenciatura</option>
+                        <option value="">Bacharelado</option>
+                        <option value="">Técnologo</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="cont-info-grad">
+                <div class="lbl-check">
+                    <input id="e-pos" type="checkbox" class="check-graduacao" data-group="graduacao">
+                    <label for="e-pos">Pós-Graduação:</label>
+                </div>
+                <div class="select-grad">
+                    <select name="" id="select-pos" disabled>
+                        <option value="">Especialização</option>
+                        <option value="">MBA</option>
+                        <option value="">Mestrado</option>
+                        <option value="">Doutorado</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <h1>Cadastro Grupo</h1>
+        <div id="div-border">
+            <div id="opcao-grupo">
+                <label for="">O projeto será feito em grupo?</label>
+            </div>
+             <div id="container-grupo">
+                <div id="nome-grupo">
+                    <label for="nome">Nome do grupo:</label>
+                    <input type="text" id="nome-grupo" name="nome-grupo">
+                </div>
+            </div>
+
+        <div id="container-info-grupo">
+            <div class="cont-item-grupo">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+            </div>
+            <div class="cont-item-grupo">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome_-luno">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+                <label for="nome">Nome do Aluno(a):</label>
+                <input type="text" id="nome-aluno" name="nome-aluno">
+            </div>
+        </div>
+    </div>
+        <!--BOTÃO-->
+        <div id="container-btn">
+            <button id="btn-env">Enviar</button>
+            <button id="btn-limp">Limpar</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
 </body>
 </html>

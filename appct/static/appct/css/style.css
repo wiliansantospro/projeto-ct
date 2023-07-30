@@ -33,11 +33,11 @@
 
 /*HEADER*/ 
 header {
-    position: relative;
+    /*position: relative;*/
     padding: 0 2rem;
     border-bottom: 2px solid #cccc;
     z-index: 1;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
 }
 
