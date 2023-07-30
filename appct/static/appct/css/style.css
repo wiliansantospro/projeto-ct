@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/*ITENS GERAIS*/
+.link {
+    list-style: none;
+}
+.txt-link {
+    text-decoration: none;
+    color: #474747;
+    font-size: 1rem;
+    border-bottom: 3px solid transparent;
+    padding: 0.5rem 1rem;
+}
+.txt-link:hover {
+    border-bottom: 3px solid #ff7518 ;
+}
+
+#logo-cloud {
+    width:154.80px ;
+    height:75.6px ;
+    margin-top: 0.8rem;
+}
+
+/* FIM ITENS GERAIS*/
+
+
+/*HEADER*/ 
+header {
+    position: relative;
+    padding: 0 2rem;
+    border-bottom: 2px solid #cccc;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 60px;
+    /*max-width: 1200px;*/
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .link {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-bar .toogle-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.container-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn-e {
+    background-color: #1200b8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 9rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-style: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: scale 0.2 ease;
+}
+
+.action-btn-e:hover {
+    scale: 1.05;
+}
+
+.action-btn-c {
+    background-color: #ff7518;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-style: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: scale 0.2 ease;
+}
+
+.action-btn-c:hover {
+    scale: 1.05;
+}
+
+.action-btn-p {
+    background-color: #ff7518;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 12rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-style: bold;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: scale 0.2 ease;
+}
+
+
+.action-btn-p:hover {
+    scale: 1.05;
+}
+
+/*DROPDOWN MENU*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 400px;
+    background: rgba(18, 0, 184, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 8px;
+    border: 1px solid rgba( 200, 200, 200, 1 );
+    overflow: hidden;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+    height: 400px;
+}
+
+.dropdown-menu .item-link {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn-e {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dropdown-menu .action-btn-c {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn-p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*FINAL HEADER*/
+
+.fundo {
+    width: 80%;
+}
+.fundo-02 {
+    width: 80%;
+    margin-top: 54px;
+}
+.fundo-03{
+    width: 80%;
+    margin-top: 50px;
+}
+.fundo-04 {
+    width: 80%;
+}
+
+
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.container section {
+    min-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+}
+
+.container section:nth-child(2){
+    background: #fff;
+}
+
+.container section:nth-child(3){
+    background: #fff;
+}
+
+.container section:nth-child(4){
+    background: #fff;
+}
+
+.container section .content {
+    max-width: 800px;
+    padding: 40px;
+    text-align: center;
+}
+
+.container section .content h2 {
+    font-size: 4em;
+    color: #111;
+}
+
+.container section .content p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #111;
+}
+
+@media (max-width: 991px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        transform: none !important;
+    }
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 840px){
+    .nav-bar .link {
+        display: none;
+    }
+
+    .container-btn {
+        display: none;
+    }
+
+    .nav-bar .toogle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+}
+
+@media (max-width: 576px){
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+
+
+
+}

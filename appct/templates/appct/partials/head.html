@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'appct/css/style.css' %}">
+    <title>ClaudThesis</title>
+</head>
+
+<!--HEADER-->
+<header>
+    <div class="nav-bar">
+
+        <div class="logo"> <img id="logo-cloud" src="{% static 'appct/logo/logo_comp.png' %}" alt="Logo"></div>
+
+            <ul class="link">
+                <li item-link><a class="txt-link" href="">Home</a></li>
+                <li item-link><a class="txt-link" href="">Sobre</a></li>
+                <li item-link><a class="txt-link" href="">Tutorial</a></li>
+            </ul>
+
+        <div class="container-btn">
+            <a href="" class="action-btn-e">Entrar</a>
+            <a href="" class="action-btn-c">Cadastro aluno</a>
+            <a href="" class="action-btn-p">Cadastro Professor</a>
+        </div>
+
+        <div class="toogle-btn">
+            <i class="fa-solid fa-bars" style="color: #1200b8;"></i>
+        </div>
+
+    </div>
+    
+    <!--DROPDOWN-->
+    <div class="dropdown-menu" >
+        <ul class="link">
+            <li class="item-link"><a class="txt-link" href="">Home</a></li>
+            <li class="item-link"><a class="txt-link" href="">Sobre</a></li>
+            <li class="item-link"><a class="txt-link" href="">Tutorial</a></li>
+            <li class="item-link"><a href="" class="action-btn-e">Entrar</a></li>
+            <li class="item-link"><a href="" class="action-btn-c">Cadastro Aluno</a></li>
+            <li class="item-link"><a href="" class="action-btn-p">Cadastro Professor</a></li>
+        </ul>
+    </div>
+    <!--FIM DROPDOWN-->
+
+</header>
+<!--FINAL HEADER-->
