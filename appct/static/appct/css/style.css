@@ -22,11 +22,12 @@
     border-bottom: 3px solid #ff7518 ;
 }
 
-#logo-cloud {
-    width:154.80px ;
-    height:75.6px ;
-    margin-top: 0.8rem;
+#size_logo {
+    margin-top: 10px;
+    width: 180px;
 }
+
+
 
 /* FIM ITENS GERAIS*/
 
@@ -36,7 +37,7 @@ header {
     /*position: relative;*/
     padding: 0 2rem;
     border-bottom: 2px solid #cccc;
-    z-index: 1;
+    z-index: 0;
     /*position: fixed;*/
     width: 100%;
 }
