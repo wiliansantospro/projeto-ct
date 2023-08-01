@@ -1,3 +1,4 @@
+{% load static %}
 {% include 'appct/partials/head.html' %}
 
 
@@ -108,19 +109,19 @@
         <div id="container-info-grupo">
             <div class="cont-item-grupo">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome-aluno">
+                <input type="text" id="nome-aluno1" name="nome-aluno">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome-aluno">
+                <input type="text" id="nome-aluno2" name="nome-aluno">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome-aluno">
+                <input type="text" id="nome-aluno3" name="nome-aluno">
             </div>
             <div class="cont-item-grupo">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome_-luno">
+                <input type="text" id="nome-aluno4" name="nome_-luno">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome-aluno">
+                <input type="text" id="nome-aluno5" name="nome-aluno">
                 <label for="nome">Nome do Aluno(a):</label>
-                <input type="text" id="nome-aluno" name="nome-aluno">
+                <input type="text" id="nome-aluno6" name="nome-aluno">
             </div>
         </div>
     </div>
@@ -130,7 +131,8 @@
             <button id="btn-limp">Limpar</button>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="{% static 'appct/js/cad_aluno.js' %}"></script>
+
 </body>
 </body>
 </html>
